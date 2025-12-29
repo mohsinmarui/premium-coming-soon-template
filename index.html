@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elysium | Coming Soon</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0F172A',
+                        'secondary': '#1E293B',
+                        'accent': '#FBBF24',
+                        'accent-gradient': '#F59E0B',
+                    },
+                    fontFamily: {
+                        'display': ['Playfair Display', 'serif'],
+                        'body': ['Montserrat', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.8s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        glow: {
+                            '0%, 100%': { opacity: 1 },
+                            '50%': { opacity: 0.7 },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(30px)', opacity: 0 },
+                            '100%': { transform: 'translateY(0)', opacity: 1 },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- External CSS for premium styling -->
+    <link rel="stylesheet" href="assets/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Animate CSS for extra animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="min-h-screen overflow-x-hidden">
+    <!-- Background Elements -->
+    <div class="background-container">
+        <div class="background-overlay"></div>
+        <div class="floating-element element-1"></div>
+        <div class="floating-element element-2"></div>
+        <div class="floating-element element-3"></div>
+        <div class="floating-element element-4"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 py-8 md:py-12 text-white">
+        <div class="max-w-6xl w-full text-center animate__animated animate__fadeIn">
+            
+            <!-- Pre-header Badge -->
+            <div class="mb-12 md:mb-16">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 animate-slide-up">
+                    <span class="h-2 w-2 bg-accent rounded-full animate-pulse"></span>
+                    <span class="text-sm font-medium uppercase tracking-wider">Premium Launch</span>
+                </div>
+            </div>
+
+            <!-- Logo/Brand -->
+            <div class="mb-12 md:mb-16">
+                <h1 class="brand-name text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-4 animate__animated animate__fadeInUp">
+                    <span class="text-gradient">Elysium</span>
+                </h1>
+                <div class="flex items-center justify-center gap-4">
+                    <div class="h-px w-16 bg-gradient-to-r from-transparent to-accent"></div>
+                    <p class="text-xl md:text-2xl font-light tracking-widest uppercase letter-spacing-wide opacity-90">Where Excellence Begins</p>
+                    <div class="h-px w-16 bg-gradient-to-l from-transparent to-accent"></div>
+                </div>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="mb-12 md:mb-16 animate__animated animate__fadeInUp animate__delay-1s">
+                <h2 class="main-heading text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    The Future Is Coming
+                </h2>
+                <p class="main-subtitle text-lg md:text-xl max-w-3xl mx-auto opacity-90 leading-relaxed">
+                    We're building something revolutionary that will transform how you experience luxury, innovation, and excellence. 
+                    <span class="block mt-2 text-accent font-semibold">Be among the first to witness the evolution.</span>
+                </p>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="mb-12 md:mb-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-1s">
+                <div class="stat-card">
+                    <div class="stat-number" data-target="2599">0</div>
+                    <div class="stat-label">Early Signups</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-label">Months in Development</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">Satisfaction Guarantee</div>
+                </div>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="mb-12 md:mb-16 animate__animated animate__fadeInUp animate__delay-2s">
+                <h2 class="section-title text-2xl md:text-3xl font-semibold mb-8 md:mb-12 flex items-center justify-center gap-3">
+                    <i class="fas fa-rocket text-accent"></i>
+                    Launching In
+                    <i class="fas fa-gem text-accent"></i>
+                </h2>
+                <div class="flex justify-center space-x-4 md:space-x-8">
+                    <div class="countdown-box">
+                        <div id="days" class="countdown-number">00</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <div id="hours" class="countdown-number">00</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <div id="minutes" class="countdown-number">00</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-box">
+                        <div id="seconds" class="countdown-number">00</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="mb-12 md:mb-16 max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-2s">
+                <div class="card-premium p-8 md:p-10">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">
+                        <i class="fas fa-crown text-accent mr-3"></i>
+                        Join The Exclusive List
+                    </h3>
+                    <p class="mb-6 opacity-90">Get early access, special launch offers, and premium updates.</p>
+                    
+                    <form id="subscribe-form" class="subscribe-form">
+                        <div class="relative">
+                            <div class="flex flex-col sm:flex-row gap-4">
+                                <div class="relative flex-1">
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        placeholder="Your professional email address" 
+                                        class="subscribe-input pl-12"
+                                        required
+                                    >
+                                </div>
+                                <button type="submit" class="subscribe-button group">
+                                    <span class="group-hover:translate-x-2 transition-transform">Get Early Access</span>
+                                    <i class="fas fa-arrow-right ml-3 group-hover:translate-x-2 transition-transform"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center mt-6 text-sm">
+                            <i class="fas fa-shield-alt text-accent mr-2"></i>
+                            <p class="form-note opacity-80">100% Secure • No Spam • Exclusive Content</p>
+                        </div>
+                    </form>
+                    <div id="success-message" class="hidden mt-6 p-4 bg-success rounded-lg animate__animated animate__fadeIn">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-2xl mr-3"></i>
+                            <div>
+                                <p class="font-semibold">Welcome to Elysium!</p>
+                                <p class="text-sm opacity-90">Check your email for confirmation and exclusive launch updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Preview -->
+            <div class="mb-12 md:mb-16 max-w-4xl mx-auto animate__animated animate__fadeIn animate__delay-3s">
+                <h3 class="text-2xl md:text-3xl font-bold mb-8">What To Expect</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h4 class="feature-title">Lightning Fast</h4>
+                        <p class="feature-description">Unmatched speed and performance that sets new industry standards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h4 class="feature-title">Premium Quality</h4>
+                        <p class="feature-description">Crafted with attention to detail and premium materials.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="feature-title">Global Access</h4>
+                        <p class="feature-description">Available worldwide with seamless integration across platforms.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="mb-12 animate__animated animate__fadeIn animate__delay-3s">
+                <p class="text-lg mb-6 font-medium">Connect With Our Journey</p>
+                <div class="flex justify-center space-x-4 md:space-x-6">
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </div>
+                <p class="mt-6 text-sm opacity-70">Join our community of early adopters and visionaries</p>
+            </div>
+            <!-- Footer Note - Elegant Version -->
+            <div class="border-t border-white/10 pt-8 mt-8 animate__animated animate__fadeIn">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <p class="text-sm opacity-80">&copy; <span id="current-year"></span> Elysium. All rights reserved.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center">
+                            <p class="text-sm opacity-80 mr-2">Created with</p>
+                            <i class="fas fa-heart text-accent animate-pulse-slow"></i>
+                            <p class="text-sm opacity-80 ml-2">by</p>
+                        </div>
+                        <a href="https://github.com/mohsinmarui" target="_blank" class="group flex items-center gap-2 px-3 py-1 bg-white/5 hover:bg-white/10 rounded-lg transition-all duration-300">
+                            <i class="fab fa-github text-lg"></i>
+                            <span class="text-sm font-medium opacity-90 group-hover:opacity-100">Mohsin Marui</span>
+                            <i class="fas fa-external-link-alt text-xs opacity-70 group-hover:opacity-100 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="text-xs opacity-60 mt-4 text-center">Premium "Coming Soon" Template • Free for GitHub use</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for functionality -->
+    <script src="assets/script.js"></script>
+</body>
+</html>

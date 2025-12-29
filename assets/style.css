@@ -1,0 +1,420 @@
+/* style.css - Premium Enhanced "Coming Soon" Page Styles */
+
+/* Custom Fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.brand-name, .main-heading {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Text Gradient */
+.text-gradient {
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 25%, #FFFFFF 50%, #FBBF24 75%, #F59E0B 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Background with premium overlay */
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(15, 23, 42, 0.9) 0%, 
+        rgba(30, 41, 59, 0.85) 25%, 
+        rgba(88, 28, 135, 0.7) 50%, 
+        rgba(15, 23, 42, 0.9) 75%, 
+        rgba(30, 41, 59, 0.85) 100%);
+    z-index: 1;
+}
+
+/* Floating elements */
+.floating-element {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.15) 0%, rgba(251, 191, 36, 0.05) 70%);
+    z-index: 1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.element-1 {
+    width: 80px;
+    height: 80px;
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.element-2 {
+    width: 120px;
+    height: 120px;
+    bottom: 20%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.element-3 {
+    width: 60px;
+    height: 60px;
+    top: 40%;
+    right: 20%;
+    animation-delay: 4s;
+}
+
+.element-4 {
+    width: 100px;
+    height: 100px;
+    bottom: 30%;
+    left: 5%;
+    animation-delay: 1s;
+}
+
+/* Premium Card */
+.card-premium {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card-premium:hover {
+    transform: translateY(-8px);
+    box-shadow: 
+        0 30px 80px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Custom styling for countdown timer */
+.countdown-box {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    min-width: 120px;
+    box-shadow: 
+        0 10px 40px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.countdown-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #FBBF24, #F59E0B);
+}
+
+.countdown-box:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.countdown-number {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to bottom, #FFFFFF, #FBBF24);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(251, 191, 36, 0.3);
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+.countdown-separator {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #FBBF24;
+    opacity: 0.7;
+    animation: glow 2s ease-in-out infinite;
+}
+
+/* Stats Cards */
+.stat-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    border-color: rgba(251, 191, 36, 0.3);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: linear-gradient(to right, #FBBF24, #F59E0B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Feature Cards */
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(251, 191, 36, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.1));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 1.8rem;
+    color: #FBBF24;
+    border: 2px solid rgba(251, 191, 36, 0.3);
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #FFFFFF;
+}
+
+.feature-description {
+    opacity: 0.8;
+    line-height: 1.6;
+}
+
+/* Subscribe form styling */
+.subscribe-form {
+    position: relative;
+}
+
+.subscribe-input {
+    flex: 1;
+    padding: 1.25rem 1.5rem 1.25rem 3rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: white;
+    font-size: 1rem;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.subscribe-input:focus {
+    outline: none;
+    border-color: #FBBF24;
+    box-shadow: 
+        0 0 0 4px rgba(251, 191, 36, 0.2),
+        0 10px 30px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.subscribe-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-button {
+    padding: 1.25rem 2.5rem;
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+    border: none;
+    border-radius: 50px;
+    color: #0F172A;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
+}
+
+.subscribe-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 15px 35px rgba(245, 158, 11, 0.4),
+        0 0 0 2px rgba(251, 191, 36, 0.2);
+}
+
+/* Social icons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: #0F172A;
+}
+
+.social-icon:hover::before {
+    opacity: 1;
+}
+
+/* Success message */
+.bg-success {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), rgba(34, 197, 94, 0.05));
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+    border-left: 4px solid #10B981;
+}
+
+/* Letter spacing utility */
+.letter-spacing-wide {
+    letter-spacing: 0.3em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .countdown-box {
+        min-width: 80px;
+        padding: 1.5rem 1rem;
+    }
+    
+    .countdown-number {
+        font-size: 2rem;
+    }
+    
+    .countdown-separator {
+        font-size: 1.5rem;
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+    
+    .social-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-name {
+        font-size: 3.5rem !important;
+    }
+    
+    .main-heading {
+        font-size: 2rem !important;
+    }
+    
+    .countdown-box {
+        min-width: 70px;
+        padding: 1.25rem 0.75rem;
+    }
+    
+    .countdown-number {
+        font-size: 1.75rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.75rem;
+        letter-spacing: 2px;
+    }
+    
+    .subscribe-button {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
