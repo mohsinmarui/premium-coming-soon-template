@@ -1,4 +1,4 @@
-# Premium "Coming Soon" Template 🚀
+# Premium "Coming Soon" Template FREE 🚀
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![GitHub stars](https://img.shields.io/github/stars/mohsinmarui/premium-coming-soon-template)
@@ -8,7 +8,8 @@
 
 A beautiful, responsive, and premium "Coming Soon" landing page template with countdown timer, email subscription form, and modern design. Perfect for startups, product launches, or any upcoming project.
 
-![Premium Coming Soon Template Screenshot](demo-screenshot.png)
+
+## Download Free Coming Soon Template
 
 ## 🌟 Features
 
